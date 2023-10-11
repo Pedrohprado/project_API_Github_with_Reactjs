@@ -58,9 +58,8 @@ export const Button = styled.button `
     
     background-color:#7f8c8d7c;
     height:34px;
-    padding: 8px;
+    width:34px;
     transition: background 0.3s;
-
 
     &:hover {
         background: #7f8c8d;

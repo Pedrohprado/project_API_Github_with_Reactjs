@@ -1,5 +1,7 @@
 import { Container, LogoGithub, Title, Form, Input, Button } from "./style";
 
+import { MdSearch } from "react-icons/md";
+
 import githublogo from "../../assets/images/github-logo.svg";
 
 export default function MainPage() {
@@ -9,8 +11,10 @@ export default function MainPage() {
       <Title>API GitHub</Title>
 
       <Form>
-        <Input placeholder="informe o nome"></Input>
-        <Button>Lupa</Button>
+        <Input placeholder="informe o usuário" />
+        <Button>
+          <MdSearch fill="white" />
+        </Button>
       </Form>
     </Container>
   );
