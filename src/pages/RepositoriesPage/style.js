@@ -10,7 +10,7 @@ export const Container = styled.main`
 `;
 
 export const Sidebar = styled.aside`
-    background-color:#101010;
+    background-color:#151515;
     min-width:12rem;
     max-height: 100vh;
     overflow-y:hidden;
