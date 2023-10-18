@@ -8,7 +8,7 @@ export default function Profile() {
       <Header>
         <Avatar src="https://avatars.githubusercontent.com/u/67080026?v=4" />
         <Login>Pedro H</Login>
-        <Name>pedro henrique Prado</Name>
+        <Name>Pedro Henrique Prado</Name>
       </Header>
       <Inner>
         <Data>
