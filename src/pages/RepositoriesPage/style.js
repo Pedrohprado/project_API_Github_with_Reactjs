@@ -10,14 +10,14 @@ export const Container = styled.main`
 `;
 
 export const Sidebar = styled.aside`
-    background-color:rgba(0, 0, 0, 0.8);
-    min-width:8rem;
+    background-color:#101010;
+    min-width:12rem;
     max-height: 100vh;
     overflow-y:hidden;
 `;
 
 export const Main = styled.section`
-    background-color: #191919;
+    background-color: #303030;
     width: 100%;
     height: 100vh;
     overflow-y:hidden;
@@ -27,7 +27,7 @@ export const Main = styled.section`
      height: 100%;
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 576px){
      padding: 40px 20px;
     }
 `;
