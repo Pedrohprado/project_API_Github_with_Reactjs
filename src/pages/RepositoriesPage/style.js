@@ -24,7 +24,11 @@ export const Main = styled.section`
     padding: 40px;
 
     @media screen and (max-width: 768px){
-     flex-direction:column;
+     height: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+     padding: 40px 20px;
     }
 `;
 
