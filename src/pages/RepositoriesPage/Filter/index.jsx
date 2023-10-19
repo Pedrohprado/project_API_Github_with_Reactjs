@@ -1,3 +1,4 @@
+import { Container, Selector, Cleaner } from "./style";
 export default function Filter() {
   const langs = [
     {
@@ -16,9 +17,18 @@ export default function Filter() {
       color: "#3498db",
     },
   ];
+
+  const selectors = langs.map(({ name, count, color }) => (
+    <Selector key={name.toLowerCase()} color={color}>
+      <span>{name}</span>
+      <span>{count}</span>
+    </Selector>
+  ));
+
   return (
-    <>
-      <h1>Filter</h1>
-    </>
+    <Container>
+      {selectors}
+      <Cleaner>Limpar</Cleaner>
+    </Container>
   );
 }
