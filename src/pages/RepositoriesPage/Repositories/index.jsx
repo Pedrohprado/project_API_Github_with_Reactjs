@@ -1,7 +1,11 @@
+import { Container } from "./style";
+
+import Repository from "./Repository";
+
 export default function Repositories() {
   return (
-    <>
-      <h1>teste</h1>
-    </>
+    <Container>
+      <Repository />
+    </Container>
   );
 }
