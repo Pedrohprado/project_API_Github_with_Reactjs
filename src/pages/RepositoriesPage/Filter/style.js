@@ -23,6 +23,8 @@ export const Selector = styled.button`
     background-color:#2d2d2d;
     color: ${(props) => props.color || "#ecf0f1"};
 
+    cursor: pointer;
+
     width:80%;
     min-height:1.8rem;
     padding: 0 1rem;
