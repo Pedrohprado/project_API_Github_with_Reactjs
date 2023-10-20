@@ -22,18 +22,24 @@ export default function Profile({ user }) {
           <MdGroup size={20} />
           {user.following} seguidores &middot; {user.followers} seguindo
         </Data>
-        <Data>
-          <MdWork size={20} />
-          {user.company}
-        </Data>
-        <Data>
-          <MdLocationCity size={20} />
-          {user.location}
-        </Data>
-        <Data>
-          <MdLink size={20} />
-          <a href={`\\${user.blog}`}>{blogFree()}</a>
-        </Data>
+        {user.company && (
+          <Data>
+            <MdWork size={20} />
+            {user.company}
+          </Data>
+        )}
+        {user.location && (
+          <Data>
+            <MdLocationCity size={20} />
+            {user.location}
+          </Data>
+        )}
+        {user.blog && (
+          <Data>
+            <MdLink size={20} />
+            <a href={`\\${user.blog}`}>{blogFree()}</a>
+          </Data>
+        )}
       </Inner>
     </Container>
   );
